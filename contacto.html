@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style2.css">
+  <title>Contacto</title>
+</head>
+
+<body>
+  <!--HEADER-->
+  <header>
+    <!--NAV BAR-->
+    <div class="container">
+      <div class="row">
+        <a href="/" class="logo">
+          <img src="imagenes/logoipsum-logo-39.svg" alt="Logoipsum" />
+        </a>
+        <nav>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="/">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="staking.html">Staking</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="swap.html">Swap</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <form action="">
+    <Section class="hablar">
+      <fieldset>
+        <legend>Contacto</legend>
+
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="escriba aqui su nombre" />
+        <br />
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Escriba aqui su apellido" />
+
+        <div>Hombre</div>
+        <input type="Radio" name="sexo" value="hombre" />
+        <div>mujer</div>
+        <input type="Radio" name="sexo" value="mujer" />
+
+        <br />
+        <h2>Elija su problema</h2>
+        <select name="Problema" id="Problema">
+          <option value="L">Pagos</option>
+          <option value="L">Farming</option>
+          <option value="L">Estafas</option>
+        </select>
+        <br>
+        <label for="mensaje">Mensaje</label>
+        <br>
+        <textarea placeholder="Escriba su mensaje" name="mensajes" id="mensaje" cols="30" rows="10"></textarea>
+        <br />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar">
+        <br />
+        <div>Acepta los terminos</div>
+        <input type="checkbox" name="aceptar" value="1" />
+        <br />
+      </fieldset>
+    </Section>
+  </form>
+  <footer class="footer">
+    <div class="footer-sm">
+      <div class="container">
+        <div class="row footer-sm__icons">
+          <div class="col">Buscanos en las redes</div>
+          <div class="col">
+            <a href="#">
+              <div>Twitter</div>
+            </a>
+            <a href="#">
+              <div>Instagram</div>
+            </a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>
