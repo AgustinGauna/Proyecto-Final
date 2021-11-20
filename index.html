@@ -6,40 +6,53 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Style2.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <title>PesoSwap</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
   <!--HEADER-->
   <header>
     <!--NAV-->
-    <div class="container">
-      <div class="row">
-        <a href="/" class="logo">
-          <img src="imagenes/logoipsum-logo-39.svg" alt="Logoipsum" />
-        </a>
-        <nav>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="/">Inicio</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">PesoSwap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="staking.html">Staking</a>
+            <li class="nav-item">
+              <a class="nav-link" href="staking.html">Staking</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="swap.html">Swap</a>
+            <li class="nav-item">
+              <a class="nav-link" href="swap.html">Swap</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="contacto.html">Contacto</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
             </li>
           </ul>
-        </nav>
+
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
   <main>
     <section class="intro-section">
@@ -105,25 +118,37 @@
 
   </main>
 
-  <footer class="footer">
-    <div class="footer-sm">
-      <div class="container">
-        <div class="row footer-sm__icons">
-          <div class="col">Seguinos en</div>
-          <div class="col">
-            <a href="#">
-              <div>Twitter</div>
-            </a>
-            <a href="#">
-              <div>Instagram</div>
-            </a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com" role="button"><img
+            src="imagenes/facebook.svg" alt=""></a>
 
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com" role="button"><img
+            src="imagenes/twitter.svg" alt=""></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com" role="button"><img
+            src="imagenes/instagram.svg" alt=""></a>
+
+
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Pesoswap.finance</a>
+    </div>
+    <!-- Copyright -->
   </footer>
+  <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
