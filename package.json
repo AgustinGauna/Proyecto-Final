@@ -1,0 +1,19 @@
+{
+  "name": "pesoswap_gauna2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css2/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgustinGauna/Proyecto-Final.git"
+  },
+  "author": "Agustin Gauna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgustinGauna/Proyecto-Final/issues"
+  },
+  "homepage": "https://github.com/AgustinGauna/Proyecto-Final#readme"
+}

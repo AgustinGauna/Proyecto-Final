@@ -5,97 +5,127 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Style2.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <title>Contacto</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
   <!--HEADER-->
   <header>
-    <!--NAV BAR-->
-    <div class="container">
-      <div class="row">
-        <a href="/" class="logo">
-          <img src="imagenes/logoipsum-logo-39.svg" alt="Logoipsum" />
-        </a>
-        <nav>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="/">Inicio</a>
+    <!--NAV-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">PesoSwap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="staking.html">Staking</a>
+            <li class="nav-item">
+              <a class="nav-link" href="staking.html">Staking</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="swap.html">Swap</a>
+            <li class="nav-item">
+              <a class="nav-link" href="swap.html">Swap</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="nosotros.html">Nosotros</a>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="contacto.html">Contacto</a>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
           </ul>
-        </nav>
+
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
-  <form action="">
-    <Section class="hablar">
-      <fieldset>
-        <legend>Contacto</legend>
 
-        <label for="Nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" placeholder="escriba aqui su nombre" />
-        <br />
-        <label for="Apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Escriba aqui su apellido" />
+  </section>
 
-        <div>Hombre</div>
-        <input type="Radio" name="sexo" value="hombre" />
-        <div>mujer</div>
-        <input type="Radio" name="sexo" value="mujer" />
-
-        <br />
-        <h2>Elija su problema</h2>
-        <select name="Problema" id="Problema">
-          <option value="L">Pagos</option>
-          <option value="L">Farming</option>
-          <option value="L">Estafas</option>
-        </select>
-        <br>
-        <label for="mensaje">Mensaje</label>
-        <br>
-        <textarea placeholder="Escriba su mensaje" name="mensajes" id="mensaje" cols="30" rows="10"></textarea>
-        <br />
-        <input type="submit" value="Enviar" />
-        <input type="reset" value="Limpiar">
-        <br />
-        <div>Acepta los terminos</div>
-        <input type="checkbox" name="aceptar" value="1" />
-        <br />
-      </fieldset>
-    </Section>
-  </form>
-  <footer class="footer">
-    <div class="footer-sm">
-      <div class="container">
-        <div class="row footer-sm__icons">
-          <div class="col">Buscanos en las redes</div>
-          <div class="col">
-            <a href="#">
-              <div>Twitter</div>
-            </a>
-            <a href="#">
-              <div>Instagram</div>
-            </a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Contact us.
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                  placeholder="Enter email" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                  else.</small>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="6" required></textarea>
+              </div>
+              <div class="mx-auto">
+                <button type="submit" class="btn btn-primary text-right">Submit</button></div>
+            </form>
           </div>
         </div>
       </div>
-    </div>
+      <div class="col-12 col-sm-4">
+        <div class="card bg-light mb-3">
+          <div class="card-header bg-success text-white text-uppercase"><i class="fa fa-home"></i> Address</div>
+          <div class="card-body">
+            <p>3 rue des Champs Elysées</p>
+            <p>75008 PARIS</p>
+            <p>France</p>
+            <p>Email : email@example.com</p>
+            <p>Tel. +33 12 56 11 51 84</p>
 
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-2">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com" role="button"><img
+            src="imagenes/facebook.svg" alt=""></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com" role="button"><img
+            src="imagenes/twitter.svg" alt=""></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com" role="button"><img
+            src="imagenes/instagram.svg" alt=""></a>
+
+
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Pesoswap.finance</a>
+    </div>
+    <!-- Copyright -->
   </footer>
+  <script src="js/bootstrap.js"></script>
 </body>
 
 </html>

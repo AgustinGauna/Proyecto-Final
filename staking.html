@@ -5,87 +5,117 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
   <title>Staking</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
 </head>
 <!--HEADER-->
 <header>
-  <!--NAV BAR-->
-  <div class="container">
-    <div class="row">
-      <a href="/" class="logo">
-        <img src="imagenes/logoipsum-logo-39.svg" alt="Logoipsum" />
-      </a>
-      <nav>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="/">Inicio</a>
+  <!--NAV-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PesoSwap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="staking.html">Staking</a>
+          <li class="nav-item">
+            <a class="nav-link" href="staking.html">Staking</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="swap.html">Swap</a>
+          <li class="nav-item">
+            <a class="nav-link" href="swap.html">Swap</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="nosotros.html">Nosotros</a>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="contacto.html">Contacto</a>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
         </ul>
-      </nav>
+
+      </div>
     </div>
-  </div>
+  </nav>
 </header>
-<section class="tablastaking">
-  <table class="tablastaking" border="5" cellpadding="30" cellspacing="30">
-    <tr>
-      <th>Beneficios del staking</th>
-      <th>Como hacer staking</th>
 
-    </tr>
-    <tr>
-      <td>
-        <ul>
-          <li>Un retorno anual de aproximadamente 100% (puede variar)</li>
-          <li>Posibilidad de recibir un airdrop</li>
-          <li>Preventas exclusivas para stakers</li>
-        </ul>
-      </td>
-      <td>
-        <ol>
-          <li>Comprar nuestro token en la seccion <a href="swap.html">Swap</a></li>
-          <li>Ir a nuestra seccion de staking (Proximamente)</li>
-          <li>Ingresar la cantidad que queres stakear</li>
-          <li>Firmar el contrato</li>
-        </ol>
-      </td>
-
-    </tr>
-
-  </table>
-</section>
-<footer class="footer">
-  <div class="footer-sm">
-    <div class="container">
-      <div class="row footer-sm__icons">
-        <div class="col">Buscanos en las redes</div>
-        <div class="col">
-          <a href="#">
-            <div>Twitter</div>
-          </a>
-          <a href="#">
-            <div>Instagram</div>
-          </a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+<body>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="imagenes/77b84-ethereum-logo_landscape_black.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Primer Paso</h5>
+          <p>Swapea eth a nuestra moneda en la seccion de <a href="swap.html">Swap</a></p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="imagenes/77b84-ethereum-logo_landscape_black.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Segundo Paso</h5>
+          <p>En la sección de staking haz clic en la opcion de Stake y elige la cantidad que quieras (no disponible
+            actualmente)</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/77b84-ethereum-logo_landscape_black.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Tercer paso</h5>
+          <p>Disfruta de un apy de 250%</p>
         </div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
+  <script src="js/bootstrap.js"></script>
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com" role="button"><img
+            src="imagenes/facebook.svg" alt=""></a>
 
-</footer>
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com" role="button"><img
+            src="imagenes/twitter.svg" alt=""></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com" role="button"><img
+            src="imagenes/instagram.svg" alt=""></a>
+
+
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Pesoswap.finance</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
