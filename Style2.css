@@ -5,9 +5,13 @@
 }
 
 body {
+
     font-family: 'Zen Kurenaido', sans-serif;
     font-family: 'Allura', cursive;
     font-family: 'Josefin Sans', sans-serif;
+    min-height: 100vh;
+
+
 }
 
 img {
@@ -108,33 +112,7 @@ header {
 
 }
 
-.footer {
-    padding-top: 1rem;
-    background-color: black;
-}
 
-.footer-sm {
-    background-color: #212121;
-    color: white;
-}
-
-.footer-sm a {
-    color: white;
-}
-
-.footer-sm a i {
-    font-size: 1rem;
-    margin-left: 1rem;
-}
-
-.footer-sm__icons {
-    text-align: center;
-    padding: 1.5rem 0
-}
-
-.footer-bottom {
-    padding: 1.5rem 0
-}
 
 .col {
     display: flex;
